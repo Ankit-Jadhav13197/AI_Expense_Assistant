@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+prophet
+plotly
+google-generativeai
+python-dotenv
+requests
+SQLAlchemy
+pydantic
+joblib
