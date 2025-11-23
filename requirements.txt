@@ -11,3 +11,8 @@ requests
 SQLAlchemy
 pydantic
 joblib
+uvicorn[standard]
+sqlalchemy
+alembic     # optional later if you want proper migrations
+pytest
+httpx
