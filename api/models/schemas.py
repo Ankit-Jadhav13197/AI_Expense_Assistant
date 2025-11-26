@@ -23,5 +23,4 @@ class ExpenseOut(ExpenseBase):
 
 model_config = {"from_attributes": True}
 
-    # class Config:
-    #     orm_mode = True     ogg
+

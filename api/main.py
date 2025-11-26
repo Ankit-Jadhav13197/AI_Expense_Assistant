@@ -5,7 +5,8 @@ from fastapi import FastAPI
 
 # Routers
 from api.routers import expenses
-from api.routers import ml_routes    
+from api.routers import ml_routes 
+from api.routers import forecast   
 
 # DB
 from api.db.session import engine
@@ -15,7 +16,8 @@ app = FastAPI(title="AI Expense Assistant - API")
 
 # Include routers
 app.include_router(expenses.router)
-app.include_router(ml_routes.router)   # <-- ADD THIS LINE
+app.include_router(ml_routes.router)
+app.include_router(forecast.router)   
 
 
 @app.on_event("startup")

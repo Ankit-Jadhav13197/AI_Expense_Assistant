@@ -15,16 +15,18 @@ import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import streamlit as st
-from ui.pages import add_expense, view_expenses
+from ui.app_pages import add_expense, view_expenses, forecast
+
 
 PAGES = {
     "Add Expense": add_expense,
     "View Expenses": view_expenses,
+    "Forecast": forecast,
 }
 
 st.set_page_config(page_title="AI Expense Assistant", layout="centered")
 
-st.title("AI Expense Assistant — Phase 1 (CRUD)")
+st.title("AI Expense Assistant")
 
 page = st.sidebar.radio("Pages", list(PAGES.keys()))
 PAGES[page].app()
